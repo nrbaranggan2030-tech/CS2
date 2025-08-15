@@ -15,7 +15,7 @@ This is a simple Python program that helps dormers, scholars, and anyone who str
 2. Download the file `budget_tracker.py`.
 3. Open a terminal or command prompt.
 4. Navigate to the folder where the file is located.
-5. Run the program with: python budget_tracker.py
+5. Run the program by pressing F5 or clicking 'Run' 
 6. Follow the on-screen instructions to input your budget and expenses.
 
 ## Example Output
