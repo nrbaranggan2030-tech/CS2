@@ -1,36 +1,55 @@
 # Budget Tracker
 
-## Project Description
-This is a simple Python program that helps dormers, scholars, and anyone who struggles with budgeting to keep track of their expenses and savings. It allows users to log their daily spending, categorize expenses, and view summaries to make smarter financial decisions.
+A simple and beginner-friendly Python program designed for students, dormers, and scholars who want to monitor their daily expenses and manage their allowance more effectively. This project started on **November 20, 2025** and was completed on **December 5, 2025**.
+
+---
+
+## Why This Project?
+Many students struggle with budgeting, especially those living in dorms and managing weekly or monthly allowance. The Budget Tracker helps users record expenses, stay organized, and build better financial habits.
+
+---
 
 ## Features
-- Add and categorize expenses (e.g., food, transportation, school supplies, etc.)
-- Set a monthly budget and track remaining balance
+- Add and categorize expenses (Food, Transportation, School Supplies, etc.)
+- Set a monthly budget
+- Automatically calculates remaining balance
 - View daily, weekly, and monthly expense summaries
-- Error handling for invalid inputs (e.g., negative numbers, text where numbers are expected)
+- Error handling for invalid inputs (negative values, text instead of numbers)
 - Saves data for future reference
 
+---
+
 ## How to Run the Program
-1. Make sure you have Python installed.
+1. Make sure Python is installed on your device.
 2. Download the file `budget_tracker.py`.
 3. Open a terminal or command prompt.
 4. Navigate to the folder where the file is located.
-5. Run the program by pressing F5 or clicking 'Run' 
+5. Run the program using:
+
+   python budget_tracker.py
+
 6. Follow the on-screen instructions to input your budget and expenses.
 
+---
+
 ## Example Output
-Enter your monthly budget: 5000
-Enter expense category: Food
-Enter expense amount: 150
+Enter your monthly budget: 5000  
+Enter expense category: Food  
+Enter expense amount: 150  
 
-Expense added successfully!
-
-Remaining budget: 4850
+Expense added successfully!  
+Remaining budget: 4850  
 
 Do you want to add another expense? (yes/no): yes
 
+---
 
 ## Contributors
-- Student 1: Nessy Ruby P. Baranggan (input validation, user interface)
-- Student 2: Lourice Jay G. Bagnol (budget logic and expense calculation)
-- Student 3: Stella Emmanuelle M. Hermosilla (data storage, summaries, and testing)
+- **Nessy Ruby P. Baranggan** – Input validation, user interface  
+- **Lourice Jay G. Bagnol** – Budget logic and expense calculation  
+- **Stella Emmanuelle M. Hermosilla** – Data storage, summaries, and testing  
+
+---
+
+## Changelog
+See `CHANGELOG.md` for the complete timeline of updates and progress.
