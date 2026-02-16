@@ -1,0 +1,129 @@
+# Project Documentation
+
+## 1. Introduction
+This repository contains the full development of the *Budget Tracker*, including documentation, source code, and development progress.
+
+---
+
+## 2. Updated Feature List
+Final implemented features:
+- Expense recording with categories
+- Monthly budget input
+- Remaining balance calculator
+- Daily, weekly, monthly summaries
+- Error handling for invalid inputs
+- Organized repository with documentation
+
+---
+## 3. File and Function Structure
+
+### Main File
+budget_tracker.py
+
+### Functions
+| Function | Purpose |
+|---|---|
+| get_budget() | Gets valid monthly budget from user |
+| add_expense() | Records expense and updates summaries |
+| calculate_remaining_budget() | Computes remaining allowance |
+| view_summaries() | Displays daily, weekly, monthly totals |
+| main() | Controls program flow |
+
+---
+## 4. Methodology
+
+### How Core Features Were Implemented
+
+#### Expense Storage
+Expenses are stored in a *list of dictionaries*:
+```python
+expense = {"date": date, "category": category, "amount": amount}
+
+Summary Calculations
+
+Dictionaries store totals:
+
+daily_summary
+
+weekly_summary
+
+monthly_summary
+
+
+This allows fast updates and easy retrieval.
+
+
+---
+
+5. Technologies Used (with Justification)
+
+Technology	Reason
+
+Python	Beginner-friendly and readable
+datetime library	Tracks dates for summaries
+Dictionaries	Efficient for storing totals
+Lists	Simple expense storage
+
+
+
+---
+6. Key Design Decisions & Trade-offs
+
+Decision	Reason
+
+Console-based UI	Simpler for beginner level
+Local data storage only	No need for internet/database
+Dictionaries for summaries	Faster computation
+
+
+Trade-off:
+
+No graphical interface yet (future improvement).
+
+---
+
+7. Backend–Frontend Communication
+
+Not applicable.
+This is a standalone console application.
+
+
+---
+
+8. Ethical Considerations in Programming
+
+Privacy
+
+No personal data collected
+
+No internet connection required
+
+Data stays on local machine
+
+
+Accessibility
+
+Simple prompts
+
+Clear error messages
+
+Beginner-friendly interface
+
+
+Intellectual Property
+
+All code written by the team
+
+No external code copied without credit
+
+
+
+---
+
+9. References (APA Style)
+
+Association for Computing Machinery. (2018).
+ACM Code of Ethics and Professional Conduct.
+https://www.acm.org/code-of-ethics
+
+---
