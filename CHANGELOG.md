@@ -1,30 +1,34 @@
-# Changelog
-All notable changes to this project will be documented here.
+All notable changes to this project are documented here.
 
 ---
 
-## Version 0.0.1 — November 20, 2025
-- Project topic “Budget Tracker” selected.
-- Defined the problem, target users, and objectives.
-- Outlined initial features and expected inputs/outputs.
-- Created first proposal draft for teacher consultation.
+## Version 0.0.1 — Nov 20, 2025
+- Selected project topic: Budget Tracker
+- Defined target users and objectives
+- Drafted initial proposal
 
 ---
 
-## Version 0.1.0 — December 4, 2025
-- Created GitHub repository and uploaded starter files.
-- Added initial version of budget_tracker.py.
-- Implemented basic expense input and category selection.
-- Added initial input validation for negative and blank inputs.
-- Wrote initial README structure and listed planned features.
+## Version 0.1.0 — Dec 4, 2025
+- Created GitHub repository
+- Uploaded starter files
+- Implemented expense input and categories
+- Added input validation
+- Created initial README
 
 ---
 
-## Version 1.0.0 — December 5, 2025
-- Completed full budget logic (monthly budget + remaining balance).
-- Added summary features (daily, weekly, monthly totals).
-- Improved error handling (text input, invalid numbers).
-- Finalized README with running instructions and contributors.
+## Version 1.0.0 — Dec 5, 2025
+- Completed monthly budget logic
+- Added daily, weekly, monthly summaries
+- Improved error handling
+- Cleaned and commented code
+- Finalized documentation
+- Prepared project for submission
+
+
+---
+
 - Cleaned code, added comments, and organized repository structure.
 - Completed documentation: project journal entries + final proposal integration.
 - Prepared files for final submission including GitHub link and presentation plan.
