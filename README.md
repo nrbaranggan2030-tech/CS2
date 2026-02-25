@@ -36,7 +36,7 @@ This Budget Tracker helps users:
 
 ---
 
-## How to Run the Program
+# How to Run the Program
 
 
 1. Install Python (if not installed).
