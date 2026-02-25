@@ -4,7 +4,7 @@ A beginner-friendly Python program that helps students, dormers, and scholars tr
 
 ---
 
-## 🎯 Project Overview
+## Project Overview
 
 Many students struggle with budgeting, especially those living in dorms and managing limited allowance.  
 
@@ -20,7 +20,7 @@ This Budget Tracker helps users:
 
 ---
 
-## ✨ Features
+## Features
 
 ✔ Add and categorize expenses  
 
@@ -36,7 +36,7 @@ This Budget Tracker helps users:
 
 ---
 
-## ▶️ How to Run the Program
+## How to Run the Program
 
 
 1. Install Python (if not installed).
