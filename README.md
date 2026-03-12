@@ -1,81 +1,95 @@
-# Budget Tracker
+#  Budget Tracker with Savings Monitor
 
-A beginner-friendly Python program that helps students, dormers, and scholars track daily expenses, manage allowance, and build better financial habits.
+A beginner-friendly Python program designed to help students track their expenses, manage their allowance, and monitor their savings progress.
 
----
-
-## Project Overview
-
-Many students struggle with budgeting, especially those living in dorms and managing limited allowance.  
-
-This Budget Tracker helps users:
-
-- Record expenses
-
-- Monitor remaining budget
-
-- View spending summaries
-
-- Develop responsible financial habits
+This project was created as part of a **Computer Science Performance Task** to demonstrate basic programming concepts such as input validation, data structures, and program organization.
 
 ---
 
-## Features
+#  Project Overview
 
-✔ Add and categorize expenses  
+Many students struggle with managing their allowance, especially those living in dormitories or managing limited weekly or monthly budgets. This program helps users record their expenses, calculate their remaining budget, and track their progress toward a savings goal.
 
-✔ Set a monthly budget  
-
-✔ Automatic remaining balance calculation  
-
-✔ Daily, weekly, and monthly summaries  
-
-✔ Input validation and error handling  
-
-✔ Organized and readable code structure  
+The program runs in the **Python console** and provides simple prompts to guide users through the budgeting process.
 
 ---
 
-## How to Run the Program
+#  Features
 
+## 1. Monthly Budget Input
+Users enter their monthly allowance at the start of the program.  
+This serves as the basis for calculating expenses and remaining balance.
 
-1. Install Python (if not installed).
+## 2. Expense Tracking
+Users can add expenses by entering a category and amount.  
+Example categories include:
+- Food
+- Transportation
+- School Supplies
 
-2. Download the file `budget_tracker.py`.
+Each expense is recorded and stored in the program.
 
-3. Open terminal or command prompt.
+## 3. Automatic Remaining Budget Calculation
+After each expense entry, the program automatically calculates the remaining budget based on the total expenses recorded.
+
+## 4. Expense Summaries
+The program generates summaries of expenses including:
+
+- Daily summaries
+- Weekly summaries
+- Monthly summaries
+
+These summaries help users analyze their spending habits.
+
+## 5. Savings Tracker
+Users can set a **savings goal** and add money toward that goal.  
+The program displays the user's **savings progress and percentage completed**.
+
+This feature encourages responsible financial habits and goal-setting.
+
+## 6. Input Validation
+The program prevents invalid inputs such as:
+- Text instead of numbers
+- Negative values
+- Blank inputs
+
+This ensures the program runs smoothly without crashing.
+
+## 7. Menu-Based Navigation
+Users interact with the program using a simple menu system.  
+Options include:
+
+1. Add Expense  
+2. Add Savings  
+3. View Expense Summaries  
+4. View Savings Progress  
+5. Exit Program  
+
+This makes the program easier to navigate.
+
+---
+
+# 🛠 Technologies Used
+
+- **Python 3**
+- Python `datetime` library
+- Lists and dictionaries for data storage
+
+Python was chosen because it is beginner-friendly and suitable for console-based applications.
+
+---
+
+#  How to Run the Program
+
+1. Make sure **Python is installed** on your computer.
+
+2. Download or clone this repository.
+
+3. Open a **terminal or command prompt**.
 
 4. Navigate to the project folder.
 
 5. Run the program:
+
+```bash
 python budget_tracker.py
-
-
-6. Follow the prompts to input your budget and expenses.
-
-
-
----
-
-## Example Output
-Enter your monthly budget: 5000  
-Enter expense category: Food  
-Enter expense amount: 150  
-
-Expense added successfully!  
-Remaining budget: 4850  
-
-Do you want to add another expense? (yes/no): yes
-
----
-
-- **Nessy Ruby P. Baranggan** – Input validation & user interface  
-
-- **Lourice Jay G. Bagnol** – Budget logic & calculations  
-
-- **Stella Emmanuelle M. Hermosilla** – Data storage, summaries & testing   
-
----
-
-## Changelog
-See `CHANGELOG.md` for the complete timeline of updates and progress.
