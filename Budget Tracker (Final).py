@@ -55,46 +55,31 @@ def get_savings_goal():
 # -------------------------
 
 def add_expense():
-    while True:
-        category = input("Enter expense category (Food, Transport, School, etc.): ").strip()
+    category = input("Enter expense category (Food, Transport, School Supplies): ").strip()
 
-        if not category:
-            print("Category cannot be blank.")
-            continue
+    if not category:
+        print("Category cannot be blank.")
+        return
 
-        try:
-            amount = float(input("Enter expense amount: "))
-            if amount < 0:
-                print("Amount cannot be negative.")
-                continue
-        except ValueError:
-            print("Invalid input. Please enter a number.")
-            continue
+    try:
+        amount = float(input("Enter expense amount: "))
+    except ValueError:
+        print("Invalid input. Please enter a number.")
+        return
 
-        date = datetime.date.today()
+    # BUG: Negative values are not checked
+    date = datetime.date.today()
 
-        expense = {
-            "date": date,
-            "category": category,
-            "amount": amount
-        }
+    expense = {
+        "date": date,
+        "category": category,
+        "amount": amount
+    }
 
-        expenses.append(expense)
+    expenses.append(expense)
 
-        # Update summaries
-        daily_summary[date] = daily_summary.get(date, 0) + amount
-
-        week = date.isocalendar()[1]
-        weekly_summary[week] = weekly_summary.get(week, 0) + amount
-
-        month = date.month
-        monthly_summary[month] = monthly_summary.get(month, 0) + amount
-
-        print("\nExpense added successfully!")
-        print(f"Remaining Budget: {calculate_remaining_budget():.2f}")
-
-        break
-
+    print("\nExpense added successfully!")
+    print(f"Remaining Budget: {calculate_remaining_budget():.2f}")
 
 # -------------------------
 # SAVINGS FUNCTIONS
@@ -232,3 +217,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
