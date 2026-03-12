@@ -1,129 +1,132 @@
 # Project Documentation
 
-## 1. Introduction
-This repository contains the full development of the *Budget Tracker*, including documentation, source code, and development progress.
+## Title of the Study
+Budget Tracker with Savings Monitor: A Python-Based Financial Management System for Students
+
+## Group Members
+- Nessy Ruby P. Baranggan
+- Lourice Jay G. Bagnol
+- Stella Emmanuelle M. Hermosilla
 
 ---
 
-## 2. Updated Feature List
-Final implemented features:
-- Expense recording with categories
-- Monthly budget input
-- Remaining balance calculator
-- Daily, weekly, monthly summaries
-- Error handling for invalid inputs
-- Organized repository with documentation
+# 1. Introduction
+
+The Budget Tracker with Savings Monitor is a simple Python-based application designed to help students monitor their expenses, manage their allowance, and track their savings goals. Many students struggle with budgeting, especially those living in dormitories or managing limited allowances. This program aims to provide a simple and beginner-friendly solution for tracking daily expenses and encouraging responsible financial habits.
 
 ---
-## 3. File and Function Structure
 
-### Main File
-budget_tracker.py
+# 2. Repository Structure
 
-### Functions
-| Function | Purpose |
+The GitHub repository is organized to clearly separate the program code, documentation, and development history.
+
+Example structure:
+
+
+Budget-Tracker/
+│
+├── budget_tracker.py
+├── README.md
+├── CHANGELOG.md
+└── DOCUMENTATION.md
+
+
+- **budget_tracker.py** – Main Python program containing the core logic of the system.
+- **README.md** – Overview of the project, instructions on how to run the program, and feature descriptions.
+- **CHANGELOG.md** – Records the development progress and updates made to the project.
+- **DOCUMENTATION.md** – Provides detailed explanations of the system design and methodology.
+
+---
+
+# 3. Core Features and Implementation
+
+## 3.1 Monthly Budget Input
+The program begins by asking the user to input their monthly budget. This value serves as the base reference for calculating remaining balance after expenses and savings are recorded.
+
+## 3.2 Expense Tracking
+Users can add expenses by entering the category and amount spent. Each expense is stored in a list containing dictionaries that record the date, category, and amount.
+
+Example structure:
+
+
+{
+"date": date,
+"category": category,
+"amount": amount
+}
+
+
+This allows the system to organize and retrieve expense information efficiently.
+
+## 3.3 Expense Summaries
+The program generates daily, weekly, and monthly summaries using dictionaries. These summaries help users understand their spending patterns and identify where most of their money is spent.
+
+The Python `datetime` library is used to retrieve the current date and determine the week and month for summary grouping.
+
+## 3.4 Savings Tracker
+The savings tracker allows users to set a savings goal and track how much they have saved. Users can allocate part of their remaining budget to savings.
+
+The system calculates the progress toward the savings goal and displays the percentage completed.
+
+This feature encourages users to practice financial discipline while managing their allowance.
+
+## 3.5 Input Validation
+To prevent program errors, the system includes input validation and error handling. The program uses `try-except` statements to detect invalid inputs such as text instead of numbers or negative values.
+
+This ensures that the program continues running even when incorrect inputs are entered.
+
+---
+
+# 4. Technologies Used
+
+| Technology | Purpose |
 |---|---|
-| get_budget() | Gets valid monthly budget from user |
-| add_expense() | Records expense and updates summaries |
-| calculate_remaining_budget() | Computes remaining allowance |
-| view_summaries() | Displays daily, weekly, monthly totals |
-| main() | Controls program flow |
+| Python | Main programming language used for the project |
+| datetime library | Used to track dates and organize expense summaries |
+| Lists | Used to store expense records |
+| Dictionaries | Used to store summary totals |
 
----
-## 4. Methodology
-
-### How Core Features Were Implemented
-
-#### Expense Storage
-Expenses are stored in a *list of dictionaries*:
-```python
-expense = {"date": date, "category": category, "amount": amount}
-
-Summary Calculations
-
-Dictionaries store totals:
-
-daily_summary
-
-weekly_summary
-
-monthly_summary
-
-
-This allows fast updates and easy retrieval.
-
+Python was chosen because it is beginner-friendly and suitable for console-based applications.
 
 ---
 
-5. Technologies Used (with Justification)
+# 5. Backend–Frontend Communication
 
-Technology	Reason
+This project does not use a graphical interface. Instead, it operates through a console-based interface where the user interacts with the program through text prompts.
 
-Python	Beginner-friendly and readable
-datetime library	Tracks dates for summaries
-Dictionaries	Efficient for storing totals
-Lists	Simple expense storage
-
-
-
----
-6. Key Design Decisions & Trade-offs
-
-Decision	Reason
-
-Console-based UI	Simpler for beginner level
-Local data storage only	No need for internet/database
-Dictionaries for summaries	Faster computation
-
-
-Trade-off:
-
-No graphical interface yet (future improvement).
+User input acts as the frontend interaction, while the Python code processes the data and updates the expense and savings records.
 
 ---
 
-7. Backend–Frontend Communication
+# 6. Design Decisions and Trade-offs
 
-Not applicable.
-This is a standalone console application.
+Several design decisions were made during development:
 
+- The program uses a **console interface** instead of a graphical interface to keep the project beginner-friendly.
+- **Dictionaries** were used for summaries because they allow fast updates and easy grouping of data.
+- The system stores data **temporarily during program execution** instead of using a database to reduce complexity.
 
----
-
-8. Ethical Considerations in Programming
-
-Privacy
-
-No personal data collected
-
-No internet connection required
-
-Data stays on local machine
-
-
-Accessibility
-
-Simple prompts
-
-Clear error messages
-
-Beginner-friendly interface
-
-
-Intellectual Property
-
-All code written by the team
-
-No external code copied without credit
-
-
+These choices helped simplify development while still meeting the project objectives.
 
 ---
 
-9. References (APA Style)
+# 7. Programming and Computing Ethics
 
-Association for Computing Machinery. (2018).
-ACM Code of Ethics and Professional Conduct.
+This project follows basic programming ethics including:
+
+### Intellectual Property
+All code was written by the group members. Any references or ideas from external sources were properly acknowledged.
+
+### User Privacy
+The program does not collect personal data and does not connect to the internet. All information entered by the user remains within the local program session.
+
+### Accessibility
+The system uses simple prompts and clear instructions to ensure that users with basic programming knowledge can easily use the program.
+
+---
+
+# 8. References
+
+Association for Computing Machinery. (2018).  
+ACM Code of Ethics and Professional Conduct.  
 https://www.acm.org/code-of-ethics
-
----
