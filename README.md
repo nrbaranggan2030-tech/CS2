@@ -35,7 +35,7 @@ Each expense is recorded and stored in the program.
 ## 4. Automatic Remaining Budget Calculation
 After each expense entry, the program automatically calculates the remaining budget based on the total expenses recorded.
 
-## 4. Expense Summaries
+## 5. Expense Summaries
 The program generates summaries of expenses including:
 
 - Daily summaries
@@ -44,13 +44,13 @@ The program generates summaries of expenses including:
 
 These summaries help users analyze their spending habits.
 
-## 5. Savings Tracker
+## 6. Savings Tracker
 Users can set a **savings goal** and add money toward that goal.  
 The program displays the user's **savings progress and percentage completed**.
 
 This feature encourages responsible financial habits and goal-setting.
 
-## 6. Input Validation
+## 7. Input Validation
 The program prevents invalid inputs such as:
 - Text instead of numbers
 - Negative values
