@@ -20,7 +20,10 @@ The program runs in the **Python console** and provides simple prompts to guide 
 Users enter their monthly allowance at the start of the program.  
 This serves as the basis for calculating expenses and remaining balance.
 
-## 2. Expense Tracking
+## 2. Allowed On The Spot Computation
+The program allows users to perform on-the-spot computations for their monthly budget, expenses, or savings. For example, users can quickly calculate their daily spending by entering simple expressions (e.g., 70 × 6) if they only remember the cost and quantity of items purchased.  
+
+## 3. Expense Tracking
 Users can add expenses by entering a category and amount.  
 Example categories include:
 - Food
@@ -29,7 +32,7 @@ Example categories include:
 
 Each expense is recorded and stored in the program.
 
-## 3. Automatic Remaining Budget Calculation
+## 4. Automatic Remaining Budget Calculation
 After each expense entry, the program automatically calculates the remaining budget based on the total expenses recorded.
 
 ## 4. Expense Summaries
