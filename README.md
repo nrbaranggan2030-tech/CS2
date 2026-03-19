@@ -58,7 +58,7 @@ The program prevents invalid inputs such as:
 
 This ensures the program runs smoothly without crashing.
 
-## 7. Menu-Based Navigation
+## 8. Menu-Based Navigation
 Users interact with the program using a simple menu system.  
 Options include:
 
