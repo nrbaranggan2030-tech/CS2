@@ -8,13 +8,11 @@ Budget Tracker with Savings Monitor: A Python-Based Financial Management System 
 - Lourice Jay G. Bagnol
 - Stella Emmanuelle M. Hermosilla
 
----
 
 # 1. Introduction
 
 The Budget Tracker with Savings Monitor is a simple Python-based application designed to help students monitor their expenses, manage their allowance, and track their savings goals. Many students struggle with budgeting, especially those living in dormitories or managing limited allowances. This program aims to provide a simple and beginner-friendly solution for tracking daily expenses and encouraging responsible financial habits.
 
----
 
 # 2. Repository Structure
 
@@ -36,7 +34,6 @@ Budget-Tracker/
 - **CHANGELOG.md** – Records the development progress and updates made to the project.
 - **DOCUMENTATION.md** – Provides detailed explanations of the system design and methodology.
 
----
 
 # 3. Core Features and Implementation
 
@@ -75,7 +72,34 @@ To prevent program errors, the system includes input validation and error handli
 
 This ensures that the program continues running even when incorrect inputs are entered.
 
----
+## Additional Feature Enhancements (Version 1.2.0)
+
+To improve usability and functionality, several advanced features were added to the system.
+
+### On-the-Spot Calculation
+The program allows users to input arithmetic expressions (e.g., "1400*4"), which are evaluated automatically. This helps users quickly compute values without using an external calculator.
+
+### Loop-Based Input Validation
+Instead of returning to the main menu after invalid input, the system keeps the user within the current feature. This allows users to correct mistakes more efficiently and improves overall user experience.
+
+### Feature-Level Exit System
+Users can type "exit" at any prompt to leave the current feature and return to the main menu. This provides more control over navigation.
+
+### Budget Control Mechanism
+The system prevents users from adding expenses or savings once the budget is fully depleted. This ensures accurate financial tracking and avoids negative balances.
+
+### Editable Savings Goal
+Users can update their savings goal at any time, allowing flexibility in financial planning.
+
+### Budget Top-Up
+Users can add additional budget during program execution. This simulates real-life scenarios where users may receive extra allowance.
+
+### Data Validation Improvements
+- Expense categories accept text input only
+- Numerical inputs are validated using exception handling
+- Negative values are not allowed
+
+These enhancements significantly improved the program’s usability, reliability, and realism.
 
 # 4. Technologies Used
 
@@ -88,7 +112,6 @@ This ensures that the program continues running even when incorrect inputs are e
 
 Python was chosen because it is beginner-friendly and suitable for console-based applications.
 
----
 
 # 5. Backend–Frontend Communication
 
@@ -96,7 +119,6 @@ This project does not use a graphical interface. Instead, it operates through a 
 
 User input acts as the frontend interaction, while the Python code processes the data and updates the expense and savings records.
 
----
 
 # 6. Design Decisions and Trade-offs
 
@@ -108,7 +130,6 @@ Several design decisions were made during development:
 
 These choices helped simplify development while still meeting the project objectives.
 
----
 
 # 7. Programming and Computing Ethics
 
@@ -123,7 +144,6 @@ The program does not collect personal data and does not connect to the internet.
 ### Accessibility
 The system uses simple prompts and clear instructions to ensure that users with basic programming knowledge can easily use the program.
 
----
 
 # 8. References
 
