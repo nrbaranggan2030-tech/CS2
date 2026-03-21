@@ -4,7 +4,6 @@ A beginner-friendly Python program designed to help students track their expense
 
 This project was created as part of a **Computer Science Performance Task** to demonstrate basic programming concepts such as input validation, data structures, and program organization.
 
----
 
 #  Project Overview
 
@@ -12,65 +11,63 @@ Many students struggle with managing their allowance, especially those living in
 
 The program runs in the **Python console** and provides simple prompts to guide users through the budgeting process.
 
----
 
-#  Features
+# ✨ Features
 
 ## 1. Monthly Budget Input
-Users enter their monthly allowance at the start of the program.  
-This serves as the basis for calculating expenses and remaining balance.
+Users enter their monthly allowance. The program also supports on-the-spot calculations (e.g., "1400*4").
 
-## 2. Allowed On The Spot Computation
-The program allows users to perform on-the-spot computations for their monthly budget, expenses, or savings. For example, users can quickly calculate their daily spending by entering simple expressions (e.g., 70 × 6) if they only remember the cost and quantity of items purchased.  
+## 2. Expense Tracking
+Users input expense categories and amounts. Categories only accept text input to ensure clean data.
 
-## 3. Expense Tracking
-Users can add expenses by entering a category and amount.  
-Example categories include:
-- Food
-- Transportation
-- School Supplies
+## 3. Automatic Remaining Budget Calculation
+The program automatically updates and displays the remaining budget after every transaction.
 
-Each expense is recorded and stored in the program.
-
-## 4. Automatic Remaining Budget Calculation
-After each expense entry, the program automatically calculates the remaining budget based on the total expenses recorded.
-
-## 5. Expense Summaries
-The program generates summaries of expenses including:
-
+## 4. Expense Summaries
+The system generates:
 - Daily summaries
 - Weekly summaries
 - Monthly summaries
 
-These summaries help users analyze their spending habits.
+## 5. Savings Tracker
+Users can:
+- Set a savings goal
+- Add savings
+- View progress toward the goal
 
-## 6. Savings Tracker
-Users can set a **savings goal** and add money toward that goal.  
-The program displays the user's **savings progress and percentage completed**.
+## 6. Editable Savings Goal
+Users can update their savings goal anytime during program execution.
 
-This feature encourages responsible financial habits and goal-setting.
+## 7. Budget Top-Up Feature
+Users can add additional budget (e.g., extra allowance).
 
-## 7. Input Validation
-The program prevents invalid inputs such as:
-- Text instead of numbers
-- Negative values
-- Blank inputs
+## 8. Smart Input System (Calculator Support)
+Users can input expressions like:
+- 1400*4
+- 500+200
 
-This ensures the program runs smoothly without crashing.
+## 9. Input Validation
+- Prevents invalid numbers
+- Prevents negative values
+- Ensures expense categories are text-only
 
-## 8. Menu-Based Navigation
-Users interact with the program using a simple menu system.  
-Options include:
-
+## 10. Menu-Based Navigation
+The program includes a structured menu system with options to:
 1. Add Expense  
 2. Add Savings  
-3. View Expense Summaries  
+3. View Summaries  
 4. View Savings Progress  
-5. Exit Program  
+5. Add Budget  
+6. Edit Savings Goal  
+7. Exit  
 
-This makes the program easier to navigate.
+## 11. Feature-Level Exit System
+Users can type **"exit"** inside any feature to return to the main menu without restarting the program.
 
----
+## 12. Budget Protection System
+The program prevents:
+- Adding expenses when budget is depleted
+- Adding savings beyond remaining budget
 
 # 🛠 Technologies Used
 
@@ -80,7 +77,6 @@ This makes the program easier to navigate.
 
 Python was chosen because it is beginner-friendly and suitable for console-based applications.
 
----
 
 #  How to Run the Program
 
