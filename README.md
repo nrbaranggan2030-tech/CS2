@@ -12,7 +12,7 @@ Many students struggle with managing their allowance, especially those living in
 The program runs in the **Python console** and provides simple prompts to guide users through the budgeting process.
 
 
-# ✨ Features
+#  Features
 
 ## 1. Monthly Budget Input
 Users enter their monthly allowance. The program also supports on-the-spot calculations (e.g., "1400*4").
