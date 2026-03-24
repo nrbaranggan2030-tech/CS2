@@ -43,7 +43,7 @@ All notable changes to this project are documented in this file.
 - Prepared project files for submission
 
 
-## Version 1.1.0 — March 2026
+## Version 1.1.0 — March 12, 2026
 ### Added
 - **Savings Tracker feature**
 - Ability to set a savings goal
