@@ -69,7 +69,7 @@ The program prevents:
 - Adding expenses when budget is depleted
 - Adding savings beyond remaining budget
 
-# 🛠 Technologies Used
+#  Technologies Used
 
 - **Python 3**
 - Python `datetime` library
