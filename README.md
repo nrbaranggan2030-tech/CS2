@@ -45,6 +45,7 @@ Users can add additional budget (e.g., extra allowance).
 Users can input expressions like:
 - 1400*4
 - 500+200
+- (100-70)*5
 
 ## 9. Input Validation
 - Prevents invalid numbers
