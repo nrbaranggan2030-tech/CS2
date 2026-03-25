@@ -61,7 +61,7 @@ def add_expense():
         if category.lower() == "exit":
             return
 
-        # ✅ Only allow text
+        #  Only allow text
         if not category.isalpha():
             print("Invalid expense category name. Only input text.")
             continue  # stays in this function, DOES NOT go back to menu
