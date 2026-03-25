@@ -45,6 +45,7 @@ Users can add additional budget (e.g., extra allowance).
 Users can input expressions like:
 - 1400*4
 - 500+200
+- (100-30)*5
 
 ## 9. Input Validation
 - Prevents invalid numbers
@@ -53,8 +54,8 @@ Users can input expressions like:
 
 ## 10. Menu-Based Navigation
 The program includes a structured menu system with options to:
-1. Add Expense  
-2. Add Savings  
+1. Add Saving 
+2. Add Expense 
 3. View Summaries  
 4. View Savings Progress  
 5. Add Budget  
