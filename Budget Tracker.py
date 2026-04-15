@@ -91,8 +91,15 @@ def add_expense():
 
         # Update summaries
         daily_summary[date] = daily_summary.get(date, 0) + amount
-        weekly_summary[date.isocalendar()[1]] = weekly_summary.get(date.isocalendar()[1], 0) + amount
-        monthly_summary[date.month] = monthly_summary.get(date.month, 0) + amount
+
+# FIXED weekly (year + week)
+        year, week, _ = date.isocalendar()
+        weekly_key = (year, week)
+        weekly_summary[weekly_key] = weekly_summary.get(weekly_key, 0) + amount
+
+# FIXED monthly (year + month)
+        monthly_key = (date.year, date.month)
+        monthly_summary[monthly_key] = monthly_summary.get(monthly_key, 0) + amount
 
         print(f"Expense added! Remaining: {calculate_remaining_budget():.2f}")
         break
@@ -197,16 +204,16 @@ def calculate_remaining_budget():
 # ===============================
 def view_summaries():
     print("\n--- DAILY ---")
-    for d, total in daily_summary.items():
-        print(d, ":", total)
+    for d, total in sorted(daily_summary.items()):
+        print(f"{d} : {total:.2f}")
 
     print("\n--- WEEKLY ---")
-    for w, total in weekly_summary.items():
-        print("Week", w, ":", total)
+    for (year, week), total in sorted(weekly_summary.items()):
+        print(f"Year {year}, Week {week} : {total:.2f}")
 
     print("\n--- MONTHLY ---")
-    for m, total in monthly_summary.items():
-        print("Month", m, ":", total)
+    for (year, month), total in sorted(monthly_summary.items()):
+        print(f"{year}-{month:02d} : {total:.2f}")
 
 
 # ===============================
